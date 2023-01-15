@@ -28,9 +28,12 @@ describe "class_person.rb" do
   it "has an instance method, 'age', that returns the number of years between the birthdate of the person and today", points: 1 do
     person = Person.new
     person.birthdate = "April 19, 1987"
-    age = Date.today.year - 1987
+    dob = Date.parse(person.birthdate)
+    now = Date.today
+    age_in_days = now - dob
+    age_in_years = age_in_days / 365
 
-    expect(person.age).to eq(age)
+    expect(person.age).to eq(age_in_years.to_i)
   end
 end
 
