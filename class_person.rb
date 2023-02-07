@@ -6,6 +6,8 @@
 #  - An instance method, full_name, that puts first_name and last_name together
 #  - An instance method, age, that calculates the number of years between today and birthdate
 
+# These methods should **return** a value; they shouldn't print anything to the terminal.
+
 class Person
   
 end
