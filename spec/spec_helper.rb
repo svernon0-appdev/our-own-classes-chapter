@@ -14,7 +14,7 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
-require_relative "../class_person"
+require_relative "../person"
 # Require all advanced classes
 # Dir[File.join(__dir__, '..', 'advanced', '*.rb')].each { |file| require file }
 

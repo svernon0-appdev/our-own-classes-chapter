@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe "class_person.rb" do
+describe "person.rb" do
   it "has an attribute `first_name`", points: 1 do
     
     expect(Person.method_defined?(:first_name)).to eq(true),
@@ -8,7 +8,7 @@ describe "class_person.rb" do
     end
   end
   
-describe "class_person.rb" do
+describe "person.rb" do
   it "has an attribute `last_name`", points: 1 do
     
     expect(Person.method_defined?(:last_name)).to eq(true),
@@ -16,7 +16,7 @@ describe "class_person.rb" do
     end
   end
   
-describe "class_person.rb" do
+describe "person.rb" do
   it "has an attribute `birthdate`", points: 1 do
     
     expect(Person.method_defined?(:birthdate)).to eq(true),
@@ -24,7 +24,7 @@ describe "class_person.rb" do
   end
 end
 
-describe "class_person.rb" do
+describe "person.rb" do
   it "has an instance method, 'age', that returns the number of years between the birthdate of the person and today", points: 1 do
     person = Person.new
     person.birthdate = "April 19, 1987"
@@ -37,7 +37,7 @@ describe "class_person.rb" do
   end
 end
 
-describe "class_person.rb" do
+describe "person.rb" do
   it "has an instance method called, 'full_name', that returns the first and last name of the person combined", points: 1 do
     person = Person.new
     person.first_name = "Mitski"
