@@ -18,7 +18,7 @@ class Person
   end
 
   def age
-    return Date.today.year - Date.parse(self.birthdate).year
+    return (Date.today - Date.parse(self.birthdate)).to_i/365
   end
 end
 
@@ -36,4 +36,3 @@ end
 #  other_person.age
 # Output:
 #=>  45
-
